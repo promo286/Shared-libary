@@ -1,3 +1,3 @@
-def buildMavenProject() {
+def call() {
     sh 'mvn package'
 }
