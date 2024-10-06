@@ -7,3 +7,10 @@ def checkoutGitRepo(String branch = 'master', String repoUrl) {
     ])
 }
 
+def runTests() {
+    sh 'mvn test'
+}
+
+def buildMavenProject() {
+    sh 'mvn package'
+}
